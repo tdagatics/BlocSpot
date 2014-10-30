@@ -14,6 +14,8 @@
 		438C5AED1A02B11A00029AA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438C5AEC1A02B11A00029AA4 /* Images.xcassets */; };
 		438C5AF01A02B11A00029AA4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438C5AEE1A02B11A00029AA4 /* LaunchScreen.xib */; };
 		438C5AFC1A02B11A00029AA4 /* BlocSpot_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C5AFB1A02B11A00029AA4 /* BlocSpot_2Tests.m */; };
+		438C5B061A02B7DE00029AA4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 438C5B051A02B7DE00029AA4 /* libsqlite3.0.dylib */; };
+		438C5B081A02B7E700029AA4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438C5B071A02B7E700029AA4 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		438C5AF51A02B11A00029AA4 /* BlocSpot_2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocSpot_2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		438C5AFA1A02B11A00029AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		438C5AFB1A02B11A00029AA4 /* BlocSpot_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocSpot_2Tests.m; sourceTree = "<group>"; };
+		438C5B051A02B7DE00029AA4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		438C5B071A02B7E700029AA4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438C5B081A02B7E700029AA4 /* MapKit.framework in Frameworks */,
+				438C5B061A02B7DE00029AA4 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 		438C5AD31A02B11A00029AA4 = {
 			isa = PBXGroup;
 			children = (
+				438C5B071A02B7E700029AA4 /* MapKit.framework */,
+				438C5B051A02B7DE00029AA4 /* libsqlite3.0.dylib */,
 				438C5ADE1A02B11A00029AA4 /* BlocSpot_2 */,
 				438C5AF81A02B11A00029AA4 /* BlocSpot_2Tests */,
 				438C5ADD1A02B11A00029AA4 /* Products */,

@@ -25,4 +25,41 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)switchToMapButton:(id)sender {
+}
+
+- (IBAction)switchToSearchButton:(id)sender {
+}
+
+#pragma mark - TableView Setup
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [pointsOfInterest count];
+}
+
+
+#pragma mark - TableView Setup
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"MapCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        
+    }
+        
+    return cell;
+}
+
+
+
 @end

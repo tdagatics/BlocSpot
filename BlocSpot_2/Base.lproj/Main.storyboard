@@ -38,19 +38,28 @@
                                 <rect key="frame" x="16" y="3" width="40" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="pushpin-google-md"/>
+                                <connections>
+                                    <action selector="switchToMapButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="If7-yD-sH7"/>
+                                </connections>
                             </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="KSe-tI-svo">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qrb-GQ-g7J">
-                                <rect key="frame" x="266" y="3" width="38" height="38"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="j4s-lz-fK9">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7mi-r5-G4K">
+                                <rect key="frame" x="264" y="3" width="40" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="magnifyingglass">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <connections>
+                                <action selector="switchToSearchButton:" destination="vXZ-lx-hvc" id="HM9-Gx-68d"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="poiListTableView" destination="K9g-yg-OJU" id="O6h-bE-PuV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

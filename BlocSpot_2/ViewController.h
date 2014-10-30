@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+{
+    NSMutableArray *pointsOfInterest;
+}
+
+- (IBAction)switchToMapButton:(id)sender;
+- (IBAction)switchToSearchButton:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITableView *poiListTableView;
 
 @end
 

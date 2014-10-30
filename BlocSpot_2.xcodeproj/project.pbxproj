@@ -16,6 +16,7 @@
 		438C5AFC1A02B11A00029AA4 /* BlocSpot_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C5AFB1A02B11A00029AA4 /* BlocSpot_2Tests.m */; };
 		438C5B061A02B7DE00029AA4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 438C5B051A02B7DE00029AA4 /* libsqlite3.0.dylib */; };
 		438C5B081A02B7E700029AA4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438C5B071A02B7E700029AA4 /* MapKit.framework */; };
+		438C5B0B1A02B92E00029AA4 /* poiOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C5B0A1A02B92E00029AA4 /* poiOfInterest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		438C5AFB1A02B11A00029AA4 /* BlocSpot_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocSpot_2Tests.m; sourceTree = "<group>"; };
 		438C5B051A02B7DE00029AA4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		438C5B071A02B7E700029AA4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		438C5B091A02B92E00029AA4 /* poiOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = poiOfInterest.h; path = ../poiOfInterest.h; sourceTree = "<group>"; };
+		438C5B0A1A02B92E00029AA4 /* poiOfInterest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = poiOfInterest.m; path = ../poiOfInterest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 		438C5ADE1A02B11A00029AA4 /* BlocSpot_2 */ = {
 			isa = PBXGroup;
 			children = (
+				438C5B091A02B92E00029AA4 /* poiOfInterest.h */,
+				438C5B0A1A02B92E00029AA4 /* poiOfInterest.m */,
 				438C5AE31A02B11A00029AA4 /* AppDelegate.h */,
 				438C5AE41A02B11A00029AA4 /* AppDelegate.m */,
 				438C5AE61A02B11A00029AA4 /* ViewController.h */,
@@ -228,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				438C5AE81A02B11A00029AA4 /* ViewController.m in Sources */,
+				438C5B0B1A02B92E00029AA4 /* poiOfInterest.m in Sources */,
 				438C5AE51A02B11A00029AA4 /* AppDelegate.m in Sources */,
 				438C5AE21A02B11A00029AA4 /* main.m in Sources */,
 			);

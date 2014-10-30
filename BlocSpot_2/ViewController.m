@@ -54,12 +54,14 @@
     
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-        
     }
+
+        poiOfInterest *aPOI = [pointsOfInterest objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = aPOI.name;
+        
         
     return cell;
 }
-
-
 
 @end

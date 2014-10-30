@@ -40,6 +40,7 @@
                                 <state key="normal" image="pushpin-google-md"/>
                                 <connections>
                                     <action selector="switchToMapButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="If7-yD-sH7"/>
+                                    <segue destination="VcQ-Vl-YKt" kind="push" id="rly-El-b7U"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -50,6 +51,9 @@
                                 <state key="normal" image="magnifyingglass">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="EHy-6K-ON2" kind="push" id="W46-Pg-XZn"/>
+                                </connections>
                             </button>
                             <connections>
                                 <action selector="switchToSearchButton:" destination="vXZ-lx-hvc" id="HM9-Gx-68d"/>
@@ -63,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="864.5" y="135.5"/>
+            <point key="canvasLocation" x="712.5" y="759.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pzh-u1-uhe">
@@ -82,7 +86,86 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hwQ-35-xXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329" y="797"/>
+            <point key="canvasLocation" x="198.5" y="730.5"/>
+        </scene>
+        <!--SearchViewController-->
+        <scene sceneID="4wQ-cT-0w6">
+            <objects>
+                <viewController title="SearchViewController" id="EHy-6K-ON2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fzx-qK-9Jb"/>
+                        <viewControllerLayoutGuide type="bottom" id="DWM-3V-OOZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fUo-nd-too">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="p3C-18-aP6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vp5-ht-CEu">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vp5-ht-CEu" id="QDA-IU-dax">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="t03-RF-Cdh">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter search term" minimumFontSize="17" id="u5c-cI-wq7">
+                            <rect key="frame" x="19" y="7" width="251" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="am4-xq-ZBN">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KZ0-Jf-hNC">
+                                <rect key="frame" x="-23" y="-15" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6m4-mO-GuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188.5" y="759.5"/>
+        </scene>
+        <!--MapViewController-->
+        <scene sceneID="MwH-iV-ubF">
+            <objects>
+                <viewController title="MapViewController" id="VcQ-Vl-YKt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H9S-gm-zSv"/>
+                        <viewControllerLayoutGuide type="bottom" id="C8E-er-czu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CWJ-6C-1dz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzj-5X-HHD">
+                                <rect key="frame" x="0.0" y="64" width="391" height="616"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xwJ-JL-41n"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JhS-XX-z3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188.5" y="1492.5"/>
         </scene>
     </scenes>
     <resources>

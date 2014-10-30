@@ -160,7 +160,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xwJ-JL-41n"/>
+                    <navigationItem key="navigationItem" id="xwJ-JL-41n">
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="VPx-FL-bbD">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NrZ-0E-qo0">
+                                <rect key="frame" x="16" y="3" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="listIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="push" id="z0u-G8-4Ds"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JhS-XX-z3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,7 +182,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="listIcon" width="38" height="38"/>
         <image name="magnifyingglass" width="38" height="38"/>
         <image name="pushpin-google-md" width="40" height="38"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="z0u-G8-4Ds"/>
+    </inferredMetricsTieBreakers>
 </document>
